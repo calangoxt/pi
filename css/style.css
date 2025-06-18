@@ -41,7 +41,12 @@ main {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-}
+} .titulo {
+    font-size: 100; /* tamanho de h1 */
+  }
+  
+
+  
 
 .bar-container {
     width: 100%;
@@ -77,7 +82,7 @@ main {
     width: 30%;
     height: 90%;
     display: flex;
-    justify-content: center;
+    justify-content :space-evenly;
     align-items: center;
     flex-direction: column;
 }
@@ -87,11 +92,13 @@ main {
 }
 
 #perfio img {
-    width: 50%;
-    height: 40%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 2px solid;
+    object-fit: cover;
 }
+
 
 #divEV {
     width: 30%;
@@ -110,12 +117,15 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
     align-items: center;
     background-color: #808080;
     width: 90%;
     height: 46%;
     border-radius: 10px;
     border: 1px solid #b0b0b0;
+   padding-top:1%;
+   padding-bottom: 1%;
 }
 
 #evo div {
@@ -126,9 +136,11 @@ main {
 }
 #evo div canvas{
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
+    
 }
+
 
 #con {
     background-color: #808080;
@@ -183,4 +195,41 @@ font-size: 70%;
     white-space: normal; 
     overflow-wrap: break-word;
     text-align: center;
+  }
+  header.bg-dark {
+    background-color: #00112f !important;
+}
+  @media screen and (max-width: 1020px) {
+    #divP{
+        flex-direction: column;
+        padding: 3%;
+        width: 90%;
+        height: 100%;
+     gap: 1%;
+    }
+    #perf {
+        width: 90%;
+        height: 33%;
+        order: 2;
+       padding-bottom: 1%;
+    }
+    #perfio {
+        width: 90%;
+        height: 20%;
+        order: 1;
+    }#divEV {
+        width: 90%;
+        height: 45%;
+        order: 3;
+
+    }.titulo {
+        font-size: 150%; /* tamanho de h1 */
+      }
+      #perfio img {
+        width: 100px;
+        height: 100px;
+
+    }
+      
+    
   }

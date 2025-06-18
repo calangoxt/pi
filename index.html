@@ -5,14 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="headers.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  <header class="py-3 border-bottom bg-dark">
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+
+      <!-- Logo e Navegação -->
+      <div class="d-flex align-items-center">
+        <a href="#" class="d-flex align-items-center link-light text-decoration-none me-4">
+          <svg class="bi me-2" width="32" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <span class="fs-5 fw-semibold">ScouTche</span>
+        </a>
+        <nav class="nav">
+          <a class="nav-link text-white" href="#">Criar Evento</a>
+          <a class="nav-link text-white" href="#">Meus Eventos</a>
+          <a class="nav-link text-white" href="#">Desempenho</a>
+        </nav>
+      </div>
+
+      <!-- Busca e Perfil -->
+      <div class="d-flex align-items-center">
+        <div class="dropdown">
+          <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="https://i.imgur.com/FWsmRcz.jpeg" alt="user" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end text-small shadow">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
   <main>
     <div id="divP">
       <div id="perf">
-        <h1>Performace</h1>
+        <h1 class="titulo">Performace</h1>
         <div class="bar-container">
           <div class="label"><span>Velocidade</span><span>4/5</span></div>
           <div class="bar">
@@ -54,20 +97,13 @@
             <div class="fill" style="width: 100%;"></div>
           </div>
         </div>
-
-        <div class="bar-container">
-          <div class="label"><span>Arremesso</span><span>4,5/5</span></div>
-          <div class="bar">
-            <div class="fill" style="width: 90%;"></div>
-          </div>
-        </div>
       </div>
 
       <div id="perfio">
         <img src="./img/mamaco.jpg" alt="">
         <div>
           <h2>macaco bom de bola</h2>
-          <h5>sub-7</h5>
+
         </div>
       </div>
       <div id="divEV">
